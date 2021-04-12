@@ -20,5 +20,4 @@ let formResult = document.getElementById("form-result");
 email.oninput = function (event) {
   event.preventDefault();
   formResult.innerText = email.value;
-  console.log(myValue);
 };
