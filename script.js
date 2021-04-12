@@ -11,6 +11,7 @@ wrapper.addEventListener("click", function () {
 let inner = document.getElementById("inner");
 inner.addEventListener("click", function (event) {
   event.preventDefault();
+  event.stopPropagation();
   console.log("Le lien a été cliqué 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄");
 });
 //lorsqu'on tape quelque chose dans le champ email, afficher le contenu du champ #email dans #form-result (pendant que l'on tape ou lorsqu'on sort du champ)
